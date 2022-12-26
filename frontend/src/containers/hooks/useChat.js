@@ -14,7 +14,7 @@ const ChatContext = createContext({
 });
 
 
-const client = new WebSocket(`ws://mychatroom-production.up.railway.app`);
+const client = new WebSocket(`wss://mychatroom-production.up.railway.app`);
 
 const ChatProvider = (props) => {
   const [status, setStatus] = useState({});
