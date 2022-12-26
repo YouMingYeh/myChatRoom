@@ -23,8 +23,6 @@ if (process.env.NODE_ENV === "development") {
 	app.use(cors());
 }
 
-
-
 const server = http.createServer(app);
 const wss = new WebSocket.Server({ server });
 const db = mongoose.connection;
