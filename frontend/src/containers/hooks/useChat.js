@@ -13,9 +13,8 @@ const ChatContext = createContext({
   clearMessages: () => {},
 });
 
-// const client = new WebSocket("/");
-const protocol = window.location.protocol.includes('https') ? 'wss': 'ws'
-const client = new WebSocket(`${protocol}://${location.host}`);
+
+const client = new WebSocket(`ws://mychatroom-production.up.railway.app`);
 
 const ChatProvider = (props) => {
   const [status, setStatus] = useState({});
