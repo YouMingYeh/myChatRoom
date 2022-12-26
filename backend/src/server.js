@@ -9,8 +9,8 @@ import { v4 as uuid } from 'uuid';
 import cors from 'cors';
 import path from 'path';
 mongo.connect();
-const app = express();
 
+const app = express();
 if (process.env.NODE_ENV === "production") {
   const __dirname = path.resolve();
   app.use(express.static(path.join(__dirname, "../frontend", "build")));

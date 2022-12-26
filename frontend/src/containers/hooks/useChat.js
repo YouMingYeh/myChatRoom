@@ -13,8 +13,7 @@ const ChatContext = createContext({
   clearMessages: () => {},
 });
 
-const client = new WebSocket(`ws://localhost:4000`);
-
+const client = new WebSocket("/");
 
 
 const ChatProvider = (props) => {
