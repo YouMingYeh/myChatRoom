@@ -13,8 +13,9 @@ const ChatContext = createContext({
   clearMessages: () => {},
 });
 
-const client = new WebSocket("/");
-
+// const client = new WebSocket("/");
+const protocol = window.location.protocol.includes('https') ? 'wss': 'ws'
+const client = new WebSocket(`${protocol}://${location.host}`);
 
 const ChatProvider = (props) => {
   const [status, setStatus] = useState({});
