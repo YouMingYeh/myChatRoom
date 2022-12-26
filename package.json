@@ -13,5 +13,6 @@
   "author": "madmaxieee <76544194+madmaxieee@users.noreply.github.com>",
   "license": "MIT",
   "main": "index.js",
-  "packageManager": "yarn@1.22.19"
+  "packageManager": "yarn@1.22.19",
+  "dependencies": {}
 }
