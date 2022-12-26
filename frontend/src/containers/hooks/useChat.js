@@ -13,7 +13,12 @@ const ChatContext = createContext({
   clearMessages: () => {},
 });
 
-const client = new WebSocket("ws://localhost:4000");
+const PORT = process.env.PORT || 4000;
+
+const client = new WebSocket(`ws://localhost:${PORT}`);
+console.log(PORT);
+
+
 
 const ChatProvider = (props) => {
   const [status, setStatus] = useState({});
