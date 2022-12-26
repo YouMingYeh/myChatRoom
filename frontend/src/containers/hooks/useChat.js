@@ -13,9 +13,8 @@ const ChatContext = createContext({
   clearMessages: () => {},
 });
 
-console.log(process.env.NODE_ENV)
+console.log(process.env.PORT)
 const PORT = process.env.PORT || 4000;
-
 const client = new WebSocket(`ws://localhost:${PORT}`);
 console.log(PORT);
 
